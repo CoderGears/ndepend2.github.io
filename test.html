@@ -8,8 +8,16 @@ $( document ).ready(function() {
 var token=$("#token").val();
 const octokit = new Octokit({ auth: token });
  var repos=   octokit.repos(octokit.user, affiliation: "owner");
+octokit.repos.get({
+  owner: 'CoderGears'
 
-    alert(JSON.stringify(repos));
+  headers: {
+    accept: 'application/vnd.github.mercy-preview+json'
+  }
+}).then(({data, headers, status}) => {
+     alert(JSON.stringify(data));
+   })
+    
 
  
   });
