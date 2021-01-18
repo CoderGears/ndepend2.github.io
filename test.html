@@ -6,7 +6,7 @@ import { Octokit } from "https://cdn.pika.dev/@octokit/rest";
 $( document ).ready(function() {
   $("#get").click(function(){
 var token=$("#token").val();
-const octokit = new Octokit({ auth: token });
+//const octokit = new Octokit({ auth: token });
  $.ajax({
         type: "GET",
         url: "https://api.github.com/users/CoderGears/repos",
@@ -18,7 +18,7 @@ const octokit = new Octokit({ auth: token });
           
         }
     });
-octokit.repos.get({
+/*octokit.repos.get({
   owner: 'CoderGears',
 repo:'testcore',
   headers: {
@@ -27,7 +27,7 @@ repo:'testcore',
 }).then(({data, headers, status}) => {
      alert(JSON.stringify(data));
    })
-    
+  */  
 
  
   });
