@@ -38,7 +38,7 @@ var token=$("#token").val();
 	       $.ajax({
         type: "PUT",
         url: "https://api.github.com/repos/CoderGears/testcore/contents/license",
-		       data:JSON.stringify(file),
+		       data:{message:'test', content:'test'},
         dataType: "json",
        headers: {
 			"Authorization" : "Bearer " + token,
