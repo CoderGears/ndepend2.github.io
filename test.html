@@ -1,8 +1,8 @@
 <script type="module">
-import { Octokit } from "https://cdn.skypack.dev/octokit";
+import { Octokit } from "https://cdn.pika.dev/@octokit/rest";
 
 
-var octokit = new Octokit({ auth: `testtoken` });
+const octokit = new Octokit({ auth: `testtoken` });
 
 // Compare: https://developer.github.com/v3/repos/#list-organization-repositories
 octokit.repos
