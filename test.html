@@ -7,9 +7,10 @@ $( document ).ready(function() {
   $("#get").click(function(){
 var token=$("#token").val();
 const octokit = new Octokit({ auth: token });
-octokit.repos.getAll({}, function(err, list) {
-    alert(JSON.stringify(list));
-});
+ var repos=   octokit.repos(octokit.user, affiliation: "owner")
+
+    alert(JSON.stringify(repos));
+
  
   });
   });
