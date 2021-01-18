@@ -18,6 +18,17 @@ var token=$("#token").val();
           
         }
     });
+     $.ajax({
+        type: "GET",
+        url: "https://api.github.com/user",
+        dataType: "json",
+        success: function(data) {
+           
+             alert(JSON.stringify(data));
+           
+          
+        }
+    });
 /*octokit.repos.get({
   owner: 'CoderGears',
 repo:'testcore',
