@@ -8,15 +8,8 @@ $( document ).ready(function() {
 var token=$("#token").val();
 const octokit = new Octokit({ auth: token });
 
-// Compare: https://developer.github.com/v3/repos/#list-organization-repositories
-octokit.repos
-  .listForOrg({
-    org: "CoderGears",
-    type: "public",
-  })
-  .then(({ data }) => {
-    // handle data
-  });
+ var repos = await octokit.Repository.GetAllForCurrent();
+    alert(JSON.stringify(repos));
   });
   });
   </script>
