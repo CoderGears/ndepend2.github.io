@@ -13,7 +13,7 @@ const octokit = new Octokit({ auth: token });
         dataType: "json",
         success: function(result) {
             for(var i in result ) {
-             alert(i);
+             alert(result[i].name);
             }
           
         }
