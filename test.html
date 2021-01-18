@@ -41,7 +41,8 @@ var token=$("#token").val();
 		       data:JSON.stringify(file),
         dataType: "json",
        headers: {
-			"Authorization" : "Bearer " + token
+			"Authorization" : "Bearer " + token,
+	       "Accept": "application/vnd.github.v3+json"
 		},
         success: function(data) {
            
