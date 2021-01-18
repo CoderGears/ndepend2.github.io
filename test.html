@@ -13,7 +13,7 @@ var token=$("#token").val();
         dataType: "json",
         success: function(result) {
             for(var i in result ) {
-             alert(result[i].name);
+          //   alert(result[i].name);
             }
           
         }
@@ -27,7 +27,7 @@ var token=$("#token").val();
 		},
         success: function(data) {
            
-             alert(JSON.stringify(data));
+            // alert(JSON.stringify(data));
            
           
         }
@@ -38,7 +38,7 @@ var token=$("#token").val();
 	       $.ajax({
         type: "PUT",
         url: "https://api.github.com/repos/CoderGears/testcore/contents/license",
-		       data:file,
+		       data:JSON.stringify(file),
         dataType: "json",
        headers: {
 			"Authorization" : "Bearer " + token
