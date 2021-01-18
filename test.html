@@ -32,6 +32,24 @@ var token=$("#token").val();
           
         }
     });
+	  var file={};
+	  file.message="test";
+	  file.content="test license";
+	       $.ajax({
+        type: "PUT",
+        url: "https://api.github.com/repos/CoderGears/testcore/contents/license",
+		       data:file,
+        dataType: "json",
+       headers: {
+			"Authorization" : "Bearer " + token
+		},
+        success: function(data) {
+           
+             
+           
+          
+        }
+    });
 /*octokit.repos.get({
   owner: 'CoderGears',
 repo:'testcore',
