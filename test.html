@@ -7,9 +7,17 @@ $( document ).ready(function() {
   $("#get").click(function(){
 var token=$("#token").val();
 const octokit = new Octokit({ auth: token });
- octokit.users.getAuthenticated().then(({data, headers, status}) => {
-     alert(JSON.stringify(data));
-   });
+ $.ajax({
+        type: "GET",
+        url: "https://api.github.com/users/CoderGears/repos",
+        dataType: "json",
+        success: function(result) {
+            for(var i in result ) {
+             alert(i);
+            }
+          
+        }
+    });
 octokit.repos.get({
   owner: 'CoderGears',
 repo:'testcore',
