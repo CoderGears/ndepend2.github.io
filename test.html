@@ -22,6 +22,9 @@ var token=$("#token").val();
         type: "GET",
         url: "https://api.github.com/user",
         dataType: "json",
+       headers: {
+			"Authorization" : "Bearer " + token
+		},
         success: function(data) {
            
              alert(JSON.stringify(data));
