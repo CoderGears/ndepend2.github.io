@@ -9,7 +9,7 @@ var token=$("#token").val();
 const octokit = new Octokit({ auth: token });
  
 octokit.repos.get({
-  owner: 'CoderGears'
+  owner: 'CoderGears',
 
   headers: {
     accept: 'application/vnd.github.mercy-preview+json'
