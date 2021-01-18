@@ -1,8 +1,12 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
 <script type="module">
 import { Octokit } from "https://cdn.pika.dev/@octokit/rest";
-
-
-const octokit = new Octokit({ auth: `4d5eec833a1fa3cdc9e4b3de53a0b12cac9666a2` });
+$( document ).ready(function() {
+  $("#get").click(function(){
+var token=$("#token").val();
+const octokit = new Octokit({ auth: token });
 
 // Compare: https://developer.github.com/v3/repos/#list-organization-repositories
 octokit.repos
@@ -13,5 +17,10 @@ octokit.repos
   .then(({ data }) => {
     // handle data
   });
-  
+  });
+  });
   </script>
+<body>
+  <input id="tocken"></input>
+<button id="get">Get Repositories</button>
+</body>
