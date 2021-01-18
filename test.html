@@ -7,7 +7,9 @@ $( document ).ready(function() {
   $("#get").click(function(){
 var token=$("#token").val();
 const octokit = new Octokit({ auth: token });
- var user=octokit.users.getAuthenticated();
+ octokit.users.getAuthenticated().then(({data, headers, status}) => {
+     alert(JSON.stringify(data));
+   });
 octokit.repos.get({
   owner: 'CoderGears',
 repo:'testcore',
