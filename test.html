@@ -8,7 +8,7 @@ $( document ).ready(function() {
 var token=$("#token").val();
 const octokit = new Octokit({ auth: token });
 
- var repos = await octokit.Repository.GetAllForCurrent();
+ var repos =  octokit.repos.getAll();
     alert(JSON.stringify(repos));
   });
   });
