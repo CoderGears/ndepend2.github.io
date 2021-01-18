@@ -2,13 +2,13 @@
 import { Octokit } from "https://cdn.skypack.dev/octokit";
 
 
-var octokit = new Octokit({ auth: `personal-access-token123` });
+var octokit = new Octokit({ auth: `testtoken` });
 
 // Compare: https://developer.github.com/v3/repos/#list-organization-repositories
 octokit.repos
   .listForOrg({
-    org: "octokit",
-    type: "private",
+    org: "CoderGears",
+    type: "public",
   })
   .then(({ data }) => {
     // handle data
