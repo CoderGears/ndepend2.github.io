@@ -11,7 +11,7 @@ var token=$("#token").val();
 	  
 	   $.ajax({
         type: "GET",
-        url: "https://api.github.com/repos/CoderGears/testcore/actions/runs",
+        url: "https://api.github.com/repos/geaz/sharpDox/actions/runs",
         dataType: "json",
         success: function(result) {
          alert(JSON.stringify(result));
