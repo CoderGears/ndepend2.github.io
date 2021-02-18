@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<NDependProLicense>
+  <LicenseId>EVALU3ATG</LicenseId>
+  <LicenseKind>4</LicenseKind>
+  <ActivationData>be3f8552-75bc-4117-b90c-e93080e5611c</ActivationData>
+  <CompanyName>CoderGears</CompanyName>
+  <CompanyAddress1>zerktouni</CompanyAddress1>
+  <CompanyAddress2 />
+  <City>casa</City>
+  <StateProvince />
+  <ZipPostalCode />
+  <Country>Morocco</Country>
+  <ContactFirstName>test</ContactFirstName>
+  <ContactLastName>test</ContactLastName>
+  <ContactEmail>test43434@gmail.com</ContactEmail>
+  <ContactAlternativeEmail />
+  <ContactPhone>0021222222</ContactPhone>
+  <NbSeats>1000</NbSeats>
+  <NbExtraSeats>0</NbExtraSeats>
+  <EmitLicenseFile>true</EmitLicenseFile>
+  <IsTrialLicense>true</IsTrialLicense>
+  <ExpireDate>18 Mar 2021</ExpireDate>
+  <RenewFromDate>18 Mar 2021</RenewFromDate>
+  <PerpetualFallbackProductDate>18 Feb 2021</PerpetualFallbackProductDate>
+<Signature><Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+         <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+         <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+         <Reference URI="">
+           <Transforms>
+             <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+           </Transforms>
+           <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+           <DigestValue>3uOQmNJQTqmTwHIE7VYJ0wH1IHw=</DigestValue>
+         </Reference>
+       </SignedInfo>
+       <SignatureValue>BC5x2+2T36evMldP2B/u0iWD9FWjb/IbSSyrWlfvBoCCVDMcCAmURfUew+UmyIZHR1mHisqlhsZ+7lQ9ygPuKZgusI9V0X4IhwwEdXzNzoidlmEtnI+hnBBPFiV0m9kpaBoLL+rObC8LMWgzVVcdZLJOPoBabSIJCILJ8vMze1k=2</SignatureValue>
+      </Signature>
+</Signature></NDependProLicense>
