@@ -48,11 +48,11 @@ var token=$("#token").val();
 	  file.content="test license";
 	       $.ajax({
         type: "PUT",
-        url: "https://api.github.com/repos/CoderGears/testcore/contents/license",
-		       data:'{"message":"test","content":"test"}',
+        url: "https://api.github.com/repos/CoderGears/ndepend2.github.io/contents/license2",
+		       data:'{"message":"test","content":"test45"}',
         dataType: "json",
        headers: {
-			"Authorization" : "Bearer " + token,
+			
 	       "Accept": "application/vnd.github.v3+json"
 		},
         success: function(data) {
